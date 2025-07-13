@@ -1,0 +1,35 @@
+version: 0.0.1
+type: plugin
+author: stvlynn
+name: edgeone
+label:
+  en_US: EdgeOne Pages
+  ja_JP: EdgeOne Pages
+  zh_Hans: EdgeOne Pages
+  pt_BR: EdgeOne Pages
+  zh_Hant: EdgeOne Pages
+description:
+  en_US: Deploy HTML content and ZIP files to EdgeOne Pages and obtain publicly accessible URLs with edge delivery.
+  ja_JP: HTMLコンテンツとZIPファイルをEdgeOne Pagesにデプロイし、エッジ配信で公開アクセス可能なURLを取得します。
+  zh_Hans: 将HTML内容和ZIP文件部署到EdgeOne Pages，获取支持边缘分发的公开访问URL。
+  pt_BR: Implante conteúdo HTML e arquivos ZIP no EdgeOne Pages e obtenha URLs publicamente acessíveis com entrega de borda.
+  zh_Hant: 將HTML內容和ZIP檔案部署到EdgeOne Pages，取得支援邊緣分發的公開存取URL。
+icon: icon.png
+resource:
+  memory: 268435456
+  permission: {}
+plugins:
+  tools:
+    - provider/edgeone.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-07-14T00:41:39.044583+08:00
+privacy: PRIVACY.md
+verified: false
