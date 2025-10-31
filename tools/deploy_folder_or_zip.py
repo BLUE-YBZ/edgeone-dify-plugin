@@ -324,7 +324,6 @@ class EdgeOneDeployer:
         
         for deployment in deployments:
             if deployment.get('DeploymentId') == deployment_id:
-                print('deployment_result', deployment)
                 return deployment
         
         raise Exception(f"Deployment {deployment_id} not found")
